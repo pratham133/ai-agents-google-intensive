@@ -1,0 +1,17 @@
+{
+  "name": "priorityflow-todo-app",
+  "version": "1.0.0",
+  "description": "Premium Todo Dashboard with Priority flow, Category organization, and local storage",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000 -o"
+  },
+  "keywords": [
+    "todo",
+    "dashboard",
+    "priorityflow",
+    "premium"
+  ],
+  "author": "",
+  "license": "ISC"
+}
