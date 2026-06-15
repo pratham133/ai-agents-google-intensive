@@ -273,3 +273,15 @@ Building and deploying a working application on the very first day demonstrated 
 **Live Application:** https://todo-list-764043015371.asia-southeast1.run.app
 
 </div>
+
+
+## 📸 Screenshots
+
+### 🤖 AI Studio - Building the App
+![AI Studio Preview](screenshots/ai-studio-todo-preview.png)
+
+### 💻 AI Studio - Code Review
+![AI Studio Code Review](screenshots/ai-studio-code-review.png)
+
+### ✅ Todo App - Dashboard
+![Todo App Dashboard](screenshots/todo-app-dashboard.png)
