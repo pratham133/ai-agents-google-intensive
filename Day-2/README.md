@@ -285,7 +285,7 @@ Explored the available AI models and learned how to switch between different mod
 
 Used Antigravity CLI as a developer assistant to retrieve Google Cloud Run deployment guidance.
 
-![Cloud Run Query](screenshot/'04-antigravity-cli-cloud-run-query.png)
+![Cloud Run Query](screenshot/04-antigravity-cli-cloud-run-query.png)
 
 ---
 
