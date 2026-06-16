@@ -261,7 +261,7 @@ The following screenshots document the complete Day 2 journey, from setting up A
 
 Successfully installed and configured Antigravity CLI, verifying that the local environment was ready for AI-assisted development workflows.
 
-![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup%20(2).png)
+![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup.png)
 
 ---
 
@@ -285,7 +285,7 @@ Explored the available AI models and learned how to switch between different mod
 
 Used Antigravity CLI as a developer assistant to retrieve Google Cloud Run deployment guidance.
 
-![Cloud Run Query](screenshot/04-antigravity-cli-cloud-run-query.png.png)
+![Cloud Run Query](screenshot/'04-antigravity-cli-cloud-run-query.png)
 
 ---
 
@@ -293,7 +293,7 @@ Used Antigravity CLI as a developer assistant to retrieve Google Cloud Run deplo
 
 Connected to the Google Developer Knowledge MCP Server and successfully retrieved information directly from official Google documentation.
 
-![Google Developer Knowledge MCP Query](screenshot/05-google-developer-knowledge-mcp-query.png.png)
+![Google Developer Knowledge MCP Query](screenshot/05-google-developer-knowledge-mcp-query.png)
 
 ---
 
@@ -301,7 +301,7 @@ Connected to the Google Developer Knowledge MCP Server and successfully retrieve
 
 Used MCP tools to search documentation, retrieve implementation details, and generate a complete Python solution.
 
-![MCP Generated Script](screenshot/06-mcp-generated-google-drive-upload-script.png.png)
+![MCP Generated Script](screenshot/06-mcp-generated-google-drive-upload-script.png)
 
 ---
 
@@ -309,7 +309,7 @@ Used MCP tools to search documentation, retrieve implementation details, and gen
 
 Verified that the generated `upload_to_drive.py` script was successfully created and saved locally.
 
-![Generated Script Saved](screenshot/07-upload-to-drive-script-created.png%20(2).png)
+![Generated Script Saved](screenshot/07-upload-to-drive-script-created.png)
 
 ---
 
