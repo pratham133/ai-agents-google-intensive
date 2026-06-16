@@ -253,18 +253,63 @@ Working with the Google Developer Knowledge MCP Server demonstrated how document
 
 ## 📸 Screenshots
 
+The following screenshots document the complete Day 2 journey, from setting up Antigravity CLI to generating a working Google Drive upload solution using MCP-powered documentation retrieval.
+
+---
+
 ### 🤖 Antigravity CLI Setup
 
-(Add Screenshot)
+Successfully installed and configured Antigravity CLI, verifying that the local environment was ready for AI-assisted development workflows.
+
+![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup%20(2).png)
+
+---
+
+### 💬 First Successful CLI Query
+
+Executed a natural language prompt to confirm that the CLI was functioning correctly and able to communicate with the configured AI model.
+
+![First Query](screenshot/02-antigravity-cli-first-query.png)
+
+---
+
+### ⚙️ AI Model Exploration
+
+Explored the available AI models and learned how to switch between different model configurations.
+
+![Model Selection](screenshot/03-antigravity-cli-model-selection.png)
+
+---
+
+### ☁️ Cloud Run Documentation Query
+
+Used Antigravity CLI as a developer assistant to retrieve Google Cloud Run deployment guidance.
+
+![Cloud Run Query](screenshot/04-antigravity-cli-cloud-run-query.png.png)
+
+---
 
 ### 🔌 Google Developer Knowledge MCP Server
 
-(Add Screenshot)
+Connected to the Google Developer Knowledge MCP Server and successfully retrieved information directly from official Google documentation.
 
-### 💻 MCP Query Results
+![Google Developer Knowledge MCP Query](screenshot/05-google-developer-knowledge-mcp-query.png.png)
 
-(Add Screenshot)
+---
+
+### 💻 MCP-Assisted Code Generation
+
+Used MCP tools to search documentation, retrieve implementation details, and generate a complete Python solution.
+
+![MCP Generated Script](screenshot/06-mcp-generated-google-drive-upload-script.png.png)
+
+---
 
 ### 🐍 Generated Google Drive Upload Script
 
-(Add Screenshot)
+Verified that the generated `upload_to_drive.py` script was successfully created and saved locally.
+
+![Generated Script Saved](screenshot/07-upload-to-drive-script-created.png%20(2).png)
+
+---
+

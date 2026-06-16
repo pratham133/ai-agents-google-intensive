@@ -1,317 +1,169 @@
-# 🚀 Day 2 — Agent Tools & Interoperability
+# 🚀 Day 1 — Introduction to AI Agents & Vibe Coding
 
 <div align="center">
 
 ### Google AI Agents Intensive Program
 
-Exploring how AI agents interact with tools, APIs, documentation, and external systems through modern interoperability standards.
+Building and deploying my first AI-generated web application using Google AI Studio.
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Day](https://img.shields.io/badge/Day-2-blue)
-![Topic](https://img.shields.io/badge/Topic-Agent%20Tools%20%26%20Interoperability-orange)
-![Protocol](https://img.shields.io/badge/Protocol-MCP-red)
+![Day](https://img.shields.io/badge/Day-1-blue)
+![Project](https://img.shields.io/badge/Project-AI%20Todo%20App-orange)
 
 </div>
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-Day 2 focused on one of the most important aspects of modern AI systems: **tool usage and interoperability**.
+Day 1 introduced the fundamentals of AI Agents and Vibe Coding through a hands-on project built with Google AI Studio.
 
-Large Language Models become significantly more capable when they can interact with external tools, APIs, documentation sources, and services. This day introduced the **Model Context Protocol (MCP)** and explored how AI agents can retrieve trusted information directly from external knowledge sources instead of relying solely on model memory.
+The objective was to experience AI-assisted software development by generating a complete web application using natural language prompts and then testing, refining, and deploying the result.
 
-Through hands-on exercises with **Antigravity CLI** and the **Google Developer Knowledge MCP Server**, I learned how documentation-aware AI workflows enable agents to access, process, and utilize real-world information dynamically.
-
----
-
-## 🎯 Objectives
-
-* Learn the fundamentals of Model Context Protocol (MCP)
-* Understand agent interoperability concepts
-* Explore how AI agents connect to external tools and services
-* Install and configure Antigravity CLI
-* Connect and interact with MCP servers
-* Retrieve information from official Google documentation
-* Generate implementation-ready code using MCP-powered workflows
+The outcome was a modern Todo Application featuring task management, search functionality, theme switching, and a responsive user interface.
 
 ---
 
-## 🧠 Key Concepts Learned
+# 🎯 Learning Objectives
 
-### 🔌 Model Context Protocol (MCP)
-
-A standardized protocol that enables AI models to communicate with external tools, APIs, databases, and documentation sources.
-
-### 🤝 Agent-to-Agent (A2A)
-
-Allows multiple AI agents to communicate and collaborate.
-
-### 🖥️ Agent-to-User Interface (A2UI)
-
-Enables agents to interact directly with applications and user interfaces.
-
-### 💳 Agent Payments Protocol (AP2)
-
-Provides mechanisms for secure payment-related actions performed by AI agents.
-
-### 🛒 Universal Commerce Protocol (UCP)
-
-Standardizes commerce interactions between AI systems and business platforms.
+* Understand the basics of AI Agents
+* Explore Vibe Coding workflows
+* Learn AI-assisted application development
+* Generate a complete project using Google AI Studio
+* Test and run a generated application locally
+* Deploy an application using AI Studio
 
 ---
 
-## 🛠️ Hands-On Activities
+# 🛠️ What I Built
 
-### 1. Antigravity CLI
+## PriorityFlow Todo Application
 
-Completed the Antigravity CLI codelab and explored terminal-based AI workflows.
-
-**Activities Completed**
-
-* Installed Antigravity CLI
-* Configured AI model access
-* Executed natural language prompts
-* Explored model selection and configuration
-* Used AI for development assistance
-
----
-
-### 2. Google Developer Knowledge MCP Server
-
-Connected an MCP server and retrieved information directly from official Google documentation.
-
-**Activities Completed**
-
-* Added the Google Developer Knowledge MCP Server
-* Queried developer documentation using natural language
-* Retrieved authoritative API information
-* Generated implementation guidance through MCP-powered workflows
-
----
-
-## 💻 Practical Exercise
-
-### Goal
-
-Create a Python script capable of uploading files to Google Drive.
-
-### Workflow
-
-```text
-Search Documentation
-        ↓
-Retrieve Information
-        ↓
-Process Context
-        ↓
-Generate Code
-        ↓
-Build Solution
-```
-
-### Result
-
-Generated a complete Python solution:
-
-```text
-generated-code/
-└── upload_to_drive.py
-```
+A modern and responsive task management application generated using Google AI Studio.
 
 ### Features
 
-* OAuth 2.0 Authentication
-* Google Drive API Integration
-* File Upload Support
-* Token Persistence
-* Basic Error Handling
+* ✅ Create Tasks
+* ✅ Edit Tasks
+* ✅ Delete Tasks
+* ✅ Search Tasks
+* ✅ Category Organization
+* ✅ Due Date Tracking
+* ✅ Theme Toggle (Light/Dark Mode)
+* ✅ Responsive UI
+* ✅ Local State Persistence
 
 ---
 
-## 📸 Implementation Walkthrough
-
-### 1️⃣ Antigravity CLI Setup
-
-Verified successful installation and configuration of Antigravity CLI.
-
-![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup%20\(2\).png)
-
----
-
-### 2️⃣ First Successful Query
-
-Executed a natural language prompt and confirmed successful response generation.
-
-![First Query](screenshot/02-antigravity-cli-first-query.png)
-
----
-
-### 3️⃣ Exploring Available Models
-
-Reviewed supported AI models and learned how to switch between them.
-
-![Model Selection](screenshot/03-antigravity-cli-model-selection.png)
-
----
-
-### 4️⃣ AI-Assisted Documentation Retrieval
-
-Used Antigravity CLI to retrieve Google Cloud Run deployment guidance.
-
-![Cloud Run Query](screenshot/04-antigravity-cli-cloud-run-query.png.png)
-
----
-
-### 5️⃣ Google Developer Knowledge MCP Query
-
-Connected to the MCP server and retrieved information directly from official documentation.
-
-![MCP Query](screenshot/05-google-developer-knowledge-mcp-query.png.png)
-
----
-
-### 6️⃣ MCP-Assisted Code Generation
-
-Generated a Google Drive upload solution using information retrieved through MCP.
-
-![Generated Script](screenshot/06-mcp-generated-google-drive-upload-script.png.png)
-
----
-
-### 7️⃣ Final Deliverable
-
-Verified that the generated script was successfully saved locally.
-
-![Saved Script](screenshot/07-upload-to-drive-script-created.png%20\(2\).png)
-
----
-
-## 🧰 Technologies Used
-
-| Category         | Technology                     |
-| ---------------- | ------------------------------ |
-| AI Platform      | Antigravity CLI                |
-| Knowledge Source | Google Developer Knowledge MCP |
-| Protocol         | Model Context Protocol (MCP)   |
-| Language         | Python                         |
-| Authentication   | OAuth 2.0                      |
-| API              | Google Drive API               |
-| Version Control  | Git & GitHub                   |
-
----
-
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
-Day-2/
+my-first-project/
 │
-├── README.md
-│
-├── generated-code/
-│   └── upload_to_drive.py
-│
-├── notes/
-│   └── notes.md
-│
-└── screenshot/
-    ├── 01-antigravity-cli-setup (2).png
-    ├── 02-antigravity-cli-first-query.png
-    ├── 03-antigravity-cli-model-selection.png
-    ├── 04-antigravity-cli-cloud-run-query.png.png
-    ├── 05-google-developer-knowledge-mcp-query.png.png
-    ├── 06-mcp-generated-google-drive-upload-script.png.png
-    └── 07-upload-to-drive-script-created.png (2).png
+├── index.html
+├── styles.css
+├── app.js
+├── package.json
+└── screenshots/
 ```
 
 ---
 
-## 💡 Key Takeaways
+# 💻 Technologies Used
 
-* MCP enables AI agents to access external knowledge dynamically.
-* Documentation-aware AI workflows improve accuracy and reliability.
-* Agent interoperability standards simplify integrations between systems.
-* AI agents become significantly more useful when connected to trusted tools and services.
-* Real-world development workflows can be accelerated through MCP-powered documentation retrieval.
+| Category        | Technology       |
+| --------------- | ---------------- |
+| Frontend        | HTML             |
+| Styling         | CSS              |
+| Logic           | JavaScript       |
+| AI Development  | Google AI Studio |
+| Version Control | Git & GitHub     |
 
 ---
 
-## 💭 Reflection
+# 🧠 What I Learned
 
-Day 2 demonstrated that modern AI systems are no longer limited to static knowledge. By connecting models to external tools and documentation through MCP, AI agents can retrieve accurate information, assist with implementation tasks, and interact with real-world systems more effectively.
+### AI-Assisted Development
 
-The most valuable lesson was understanding how interoperability standards such as MCP are helping transform AI from conversational systems into capable software agents.
+Learned how modern AI tools can generate complete application structures from natural language prompts.
+
+### Prompt Iteration
+
+Improved results through iterative prompting and refinement.
+
+### Frontend Fundamentals
+
+Explored how HTML, CSS, and JavaScript work together in a real project.
+
+### Application Testing
+
+Learned how to run, inspect, and validate a generated application locally.
+
+### AI Studio Deployment
+
+Published an AI-generated application through Google AI Studio.
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Todo Dashboard
+
+Main application dashboard showing task management functionality.
+
+![Todo Dashboard](screenshots/todo-app-dashboard.png)
+
+---
+
+## 🎨 AI Studio Generated Application Preview
+
+Preview of the generated application inside Google AI Studio.
+
+![AI Studio Preview](screenshots/ai-studio-todo-preview.png)
+
+---
+
+## 🔍 AI Studio Code Review
+
+Reviewing generated code and application structure inside AI Studio.
+
+![AI Studio Code Review](screenshots/ai-studio-code-review.png)
+
+---
+
+# ✅ Features Verified
+
+* [x] Task Creation
+* [x] Search Functionality
+* [x] Theme Toggle
+* [x] Responsive Layout
+* [x] Local Application Execution
+* [x] AI Studio Publishing Workflow
+
+---
+
+# 💡 Key Takeaways
+
+* AI can generate complete application structures from natural language instructions.
+* Iterative prompting significantly improves generated results.
+* Understanding generated code remains important even when AI writes it.
+* AI-assisted development can dramatically accelerate prototyping.
+* Google AI Studio provides an effective environment for rapid experimentation.
+
+---
+
+# 💭 Reflection
+
+Day 1 demonstrated how AI is transforming software development workflows.
+
+Rather than starting from a blank editor, developers can collaborate with AI systems to rapidly generate, refine, and deploy applications. This experience highlighted both the speed and potential of AI-assisted development while reinforcing the importance of understanding the generated code.
 
 ---
 
 <div align="center">
 
-## ✅ Day 2 Successfully Completed
+## 🌟 Day 1 Successfully Completed
 
-*"AI agents become truly powerful when they can access information beyond their training data."*
+*"The fastest way to learn AI-assisted development is to build something with it."*
 
 </div>
-
----
-
-## 📸 Screenshots
-
-The following screenshots document the complete Day 2 journey, from setting up Antigravity CLI to generating a working Google Drive upload solution using MCP-powered documentation retrieval.
-
----
-
-### 🤖 Antigravity CLI Setup
-
-Successfully installed and configured Antigravity CLI, verifying that the local environment was ready for AI-assisted development workflows.
-
-![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup.png)
-
----
-
-### 💬 First Successful CLI Query
-
-Executed a natural language prompt to confirm that the CLI was functioning correctly and able to communicate with the configured AI model.
-
-![First Query](screenshot/02-antigravity-cli-first-query.png)
-
----
-
-### ⚙️ AI Model Exploration
-
-Explored the available AI models and learned how to switch between different model configurations.
-
-![Model Selection](screenshot/03-antigravity-cli-model-selection.png)
-
----
-
-### ☁️ Cloud Run Documentation Query
-
-Used Antigravity CLI as a developer assistant to retrieve Google Cloud Run deployment guidance.
-
-![Cloud Run Query](screenshot/04-antigravity-cli-cloud-run-query.png)
-
----
-
-### 🔌 Google Developer Knowledge MCP Server
-
-Connected to the Google Developer Knowledge MCP Server and successfully retrieved information directly from official Google documentation.
-
-![MCP Query](screenshot/05-google-developer-knowledge-mcp-query.png)
-
----
-
-### 💻 MCP-Assisted Code Generation
-
-Used MCP tools to search documentation, retrieve implementation details, and generate a complete Python solution.
-
-![Generated Script](screenshot/06-mcp-generated-google-drive-upload-script.png)
-
----
-
-### 🐍 Generated Google Drive Upload Script
-
-Verified that the generated `upload_to_drive.py` script was successfully created and saved locally.
-
-![Saved Script](screenshot/07-upload-to-drive-script-created.png)
-
----
