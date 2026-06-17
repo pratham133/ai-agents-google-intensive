@@ -3,3 +3,5 @@
 *.pyc
 __pycache__/
 .adk/
+
+Day-3/study_buddy_agent/.env
