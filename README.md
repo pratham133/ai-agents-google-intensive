@@ -6,7 +6,7 @@
 
 Exploring AI Agents, Agentic Engineering, MCP, Google AI Studio, Cloud Run, and real-world AI application development.
 
-![Progress](https://img.shields.io/badge/Progress-2%20Days%20Completed-brightgreen)
+![Progress](https://img.shields.io/badge/Progress-3%20Days%20Completed-brightgreen)
 ![Program](https://img.shields.io/badge/Google-AI%20Agents%20Intensive-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
@@ -40,11 +40,11 @@ Throughout the program, I am building projects, documenting learnings, completin
 
 # 📅 Program Progress
 
-| Day   | Topic                                   | Status      |
-| ----- | --------------------------------------- | ----------- |
+| Day   | Topic                                   | Status       |
+| ----- | --------------------------------------- | ------------ |
 | Day 1 | Introduction to AI Agents & Vibe Coding | ✅ Completed |
 | Day 2 | Agent Tools & Interoperability          | ✅ Completed |
-| Day 3 | Coming Soon                             | ⏳           |
+| Day 3 | Building AI Agents with Google ADK      | ✅ Completed |
 | Day 4 | Coming Soon                             | ⏳           |
 | Day 5 | Coming Soon                             | ⏳           |
 
@@ -63,6 +63,31 @@ ai-agents-google-intensive/
 │   ├── generated-code/
 │   ├── notes/
 │   └── screenshot/
+│
+├── Day-3/
+│   ├── README.md
+│   ├── screenshot/
+│   │   ├── 01-skills-discovery.png
+│   │   ├── 02-antigravity-cli-first-query.png
+│   │   ├── 03-agents-cli-version.png
+│   │   ├── 04-python-helper-skill-created.png
+│   │   ├── 05-skill-invocation.png
+│   │   ├── 06-adk-agent-created.png
+│   │   ├── 07-adk-agent-files-explained.png
+│   │   ├── 08-adk-agent-explanation.png
+│   │   ├── 09-quota-limit-reached.png
+│   │   ├── 10-venv-created.png
+│   │   ├── 11-venv-activated.png
+│   │   ├── 12-google-adk-installed.png
+│   │   └── 13-study-buddy-agent-running-successfully.png
+│   ├── skill/
+│   │   └── skill.md
+│   └── study_buddy_agent/
+│       ├── .venv/
+│       ├── .env
+│       ├── agent.py
+│       ├── requirements.txt
+│       └── __init__.py
 │
 └── README.md
 ```
@@ -142,16 +167,86 @@ Day-2/
 
 ---
 
+# 🤖 Day 3 — Building AI Agents with Google ADK
+
+### Highlights
+
+* Learned the fundamentals of building AI agents using Google's Agent Development Kit (ADK)
+* Built a fully functional **Study Buddy Agent** capable of answering questions, explaining concepts, and helping with learning
+* Ran and tested the agent locally using the ADK Web UI
+* Deployed a public live demo using ngrok
+* Understood agent structure, skill integration, and agentic workflows
+
+### 🌐 Live Demo
+
+> **Note:** The live demo URL is served via ngrok and is active while the local agent is running.
+
+| Environment | URL |
+| ----------- | --- |
+| Local       | http://127.0.0.1:8000 |
+| Public (ngrok) | https://village-unguided-flatware.ngrok-free.dev |
+
+### Hands-On Work
+
+* Set up a Python virtual environment for the ADK project
+* Configured a Gemini-powered agent with Google ADK
+* Built and registered a custom skill for the Study Buddy Agent
+* Launched the ADK Web Server and tested agent responses
+* Installed and configured ngrok to expose the local server publicly
+* Troubleshot PATH issues, ngrok version compatibility, and Google Cloud billing constraints
+
+### Deliverables
+
+```text
+Day-3/
+├── README.md
+├── screenshot/
+│   ├── 01-skills-discovery.png
+│   ├── 02-antigravity-cli-first-query.png
+│   ├── 03-agents-cli-version.png
+│   ├── 04-python-helper-skill-created.png
+│   ├── 05-skill-invocation.png
+│   ├── 06-adk-agent-created.png
+│   ├── 07-adk-agent-files-explained.png
+│   ├── 08-adk-agent-explanation.png
+│   ├── 09-quota-limit-reached.png
+│   ├── 10-venv-created.png
+│   ├── 11-venv-activated.png
+│   ├── 12-google-adk-installed.png
+│   └── 13-study-buddy-agent-running-successfully.png
+├── skill/
+│   └── skill.md
+└── study_buddy_agent/
+    ├── .venv/
+    ├── .env
+    ├── agent.py
+    ├── requirements.txt
+    └── __init__.py
+```
+
+### Skills Gained
+
+* Google Agent Development Kit (ADK)
+* Agent architecture and skill integration
+* Python virtual environments
+* ADK Web UI testing and debugging
+* Local-to-public tunneling with ngrok
+* Google Cloud CLI setup and project configuration
+
+---
+
 # 🛠 Technologies Explored
 
 * Google AI Studio
+* Google Agent Development Kit (ADK)
 * Antigravity CLI
 * Model Context Protocol (MCP)
 * Google Developer Knowledge MCP Server
+* ngrok
 * Python
 * JavaScript
 * HTML & CSS
-* Google Cloud Run
+* Google Cloud CLI
 * OAuth 2.0
 * Git & GitHub
 
@@ -159,11 +254,12 @@ Day-2/
 
 # 📚 Daily Learning Journal
 
-| Day    | Documentation                       |
-| ------ | ----------------------------------- |
-| Day 1  | Project README & Source Code        |
-| Day 2  | Notes, Screenshots & Generated Code |
-| Day 3+ | Coming Soon                         |
+| Day   | Documentation                               |
+| ----- | ------------------------------------------- |
+| Day 1 | Project README & Source Code                |
+| Day 2 | Notes, Screenshots & Generated Code         |
+| Day 3 | README, Live Agent Demo & Skill Code        |
+| Day 4+ | Coming Soon                               |
 
 ---
 
@@ -171,8 +267,9 @@ Day-2/
 
 ### Completed
 
-* ✅ Day 1
-* ✅ Day 2
+* ✅ Day 1 — AI Agents Introduction & Vibe Coding
+* ✅ Day 2 — Agent Tools & Interoperability (MCP)
+* ✅ Day 3 — Building AI Agents with Google ADK
 
 ### In Progress
 
@@ -184,9 +281,9 @@ Day-2/
 
 # 🚀 Next Milestone
 
-**Day 3 — Advanced Agent Concepts**
+**Day 4 — Coming Soon**
 
-Upcoming topics include deeper exploration of agent architectures, reasoning workflows, memory systems, and more advanced AI application development patterns.
+Upcoming topics will build on agent fundamentals with deeper exploration of multi-agent systems, reasoning workflows, memory, and production deployment patterns.
 
 ---
 
