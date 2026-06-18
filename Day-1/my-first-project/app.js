@@ -100,7 +100,7 @@ function applyTheme() {
     document.documentElement.setAttribute('data-theme', state.theme);
     const btn = document.getElementById('themeToggleBtn');
     if (btn) {
-        btn.innerHTML = state.theme === 'dark' 
+        btn.innerHTML = state.theme === 'dark'
             ? `<svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="4"/>
                 <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
@@ -149,7 +149,7 @@ function setupEventListeners() {
     document.getElementById('closeModalBtn').addEventListener('click', closeEditModal);
     document.getElementById('cancelModalBtn').addEventListener('click', closeEditModal);
     document.getElementById('saveModalBtn').addEventListener('click', saveEditedTask);
-    
+
     // Close modal on click outside content
     document.getElementById('editModalOverlay').addEventListener('click', (e) => {
         if (e.target.id === 'editModalOverlay') {
@@ -266,7 +266,7 @@ function addSubtask(taskId) {
 
     if (!task.subtasks) task.subtasks = [];
     task.subtasks.push(newSubtask);
-    
+
     // If task was completed, and we add a pending subtask, task is no longer completed
     if (task.completed) {
         task.completed = false;
@@ -320,7 +320,7 @@ function openEditModal(id) {
     if (!task) return;
 
     state.editingTaskId = id;
-    
+
     document.getElementById('editTitle').value = task.title;
     document.getElementById('editDesc').value = task.description || '';
     document.getElementById('editPriority').value = task.priority;
@@ -363,37 +363,37 @@ function createCelebrationParticles(originX, originY) {
     for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.classList.add('confetti-particle');
-        
+
         // Random particle styling
         const color = colors[Math.floor(Math.random() * colors.length)];
         particle.style.backgroundColor = color;
-        
+
         const size = Math.floor(Math.random() * 8) + 6; // 6px - 14px
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
-        
+
         // Circular particles mostly, some squares
         if (Math.random() > 0.4) {
             particle.style.borderRadius = '50%';
         }
-        
+
         // Position at click coordinate
         particle.style.left = `${originX}px`;
         particle.style.top = `${originY}px`;
-        
+
         // Trajectory variables
         const angle = Math.random() * Math.PI * 2; // 0 to 360 deg
         const distance = Math.floor(Math.random() * 100) + 50; // 50px - 150px
         const x = Math.cos(angle) * distance;
         const y = Math.sin(angle) * distance;
         const rotate = Math.floor(Math.random() * 720) - 360;
-        
+
         particle.style.setProperty('--x', `${x}px`);
         particle.style.setProperty('--y', `${y}px`);
         particle.style.setProperty('--r', `${rotate}deg`);
-        
+
         document.body.appendChild(particle);
-        
+
         // Cleanup particle DOM
         particle.addEventListener('animationend', () => {
             particle.remove();
@@ -460,7 +460,7 @@ function renderCategoryFilters() {
         const label = cat.charAt(0).toUpperCase() + cat.slice(1);
         const isActive = state.filters.category === cat;
         const colorVar = `var(--cat-${cat})`;
-        
+
         let dotHtml = '';
         if (cat !== 'all') {
             dotHtml = `<span class="cat-dot" style="background-color: ${colorVar}"></span>`;
@@ -508,15 +508,15 @@ function render() {
 
     // Search filter
     if (state.filters.search) {
-        filteredTasks = filteredTasks.filter(t => 
-            t.title.toLowerCase().includes(state.filters.search) || 
+        filteredTasks = filteredTasks.filter(t =>
+            t.title.toLowerCase().includes(state.filters.search) ||
             (t.description && t.description.toLowerCase().includes(state.filters.search))
         );
     }
 
     // 3. Sort Tasks
     const priorityWeight = { high: 3, medium: 2, low: 1 };
-    
+
     filteredTasks.sort((a, b) => {
         if (state.filters.sort === 'created-desc') {
             return b.createdDate - a.createdDate;
@@ -556,7 +556,7 @@ function render() {
         // Class calculations
         const completedClass = task.completed ? 'completed' : '';
         const priorityClass = `priority-${task.priority}`;
-        
+
         // Priority Badge
         const priorityLabels = { high: '🔴 High', medium: '🟡 Medium', low: '🟢 Low' };
         const priorityBadge = `<span class="badge badge-priority-${task.priority}">${priorityLabels[task.priority]}</span>`;
@@ -589,7 +589,7 @@ function render() {
                 const dt = new Date(parts[0], parts[1] - 1, parts[2]);
                 displayDate = dt.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
             } catch (e) {}
-            
+
             dateBadge = `
                 <span class="badge badge-date ${overdueClass}">
                     ${calendarIcon}
@@ -603,9 +603,9 @@ function render() {
         const completedSubtasksCount = subtasks.filter(s => s.completed).length;
         const totalSubtasksCount = subtasks.length;
         const hasSubtasks = totalSubtasksCount > 0;
-        
+
         let subtasksSectionHtml = '';
-        
+
         if (hasSubtasks || !task.completed) {
             const subtaskItemsHtml = subtasks.map(sub => `
                 <div class="subtask-item ${sub.completed ? 'completed' : ''}">
@@ -645,11 +645,11 @@ function render() {
                         <input type="checkbox" ${task.completed ? 'checked' : ''} onchange="toggleTask('${task.id}', event)">
                         <span class="checkmark"></span>
                     </label>
-                    
+
                     <div class="task-details">
                         <div class="task-title">${escapeHtml(task.title)}</div>
                         ${task.description ? `<div class="task-desc">${escapeHtml(task.description)}</div>` : ''}
-                        
+
                         <div class="task-badges" style="margin-top: 0.5rem;">
                             ${priorityBadge}
                             ${catBadge}

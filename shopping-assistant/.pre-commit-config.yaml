@@ -1,0 +1,23 @@
+repos:
+  # ── Standard file hygiene ──────────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+        name: Fix end of files
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+
+  # ── Semgrep security scan ──────────────────────────────────────────────────
+  - repo: local
+    hooks:
+      - id: semgrep
+        name: Semgrep security scan
+        language: python
+        entry: semgrep
+        args:
+          - --config=auto
+          - --error          # exit non-zero on any finding (blocks the commit)
+          - --quiet          # suppress progress noise; show only findings
+        types: [python]
+        pass_filenames: true

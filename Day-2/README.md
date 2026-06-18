@@ -312,4 +312,3 @@ Verified that the generated `upload_to_drive.py` script was successfully created
 ![Generated Script Saved](screenshot/07-upload-to-drive-script-created.png)
 
 ---
-

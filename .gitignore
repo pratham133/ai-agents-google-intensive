@@ -1,7 +1,13 @@
-
 *.db
 *.pyc
+
+.venv/
+*/.venv/
+
 __pycache__/
+*/__pycache__/
+
 .adk/
+.env
 
 Day-3/study_buddy_agent/.env
