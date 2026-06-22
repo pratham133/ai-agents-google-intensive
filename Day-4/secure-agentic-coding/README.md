@@ -1,16 +1,16 @@
-# 🔐 Day 4 — Secure Agentic Coding
-
 <div align="center">
+
+# 🚀 Day 4 — Secure Agentic Coding
 
 ### Google AI Agents Intensive Program
 
-*Building secure AI systems through threat modeling, security guardrails, automated scanning, and agent governance.*
+*Hardening an AI-generated agent with project-level security rules, automated scanning, and runtime validation.*
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Day](https://img.shields.io/badge/Day-4-blue)
 ![Topic](https://img.shields.io/badge/Topic-Secure%20Agentic%20Coding-orange)
-![Security](https://img.shields.io/badge/Focus-Agent%20Security-red)
-![Tooling](https://img.shields.io/badge/Tooling-Antigravity-purple)
+![Built With](https://img.shields.io/badge/Built%20With-agents--cli-red)
+![Security](https://img.shields.io/badge/Security-STRIDE%20%2B%20Semgrep-purple)
 
 </div>
 
@@ -18,330 +18,194 @@
 
 # 📖 Overview
 
-Day 4 focused on one of the most important aspects of modern AI development:
+Day 4's second track shifted focus from *building* agents to **securing** them.
 
-**Security.**
-
-Building AI agents is only part of the challenge. Production-grade agents must also be protected against:
-
-* Hardcoded secrets
-* Unsafe tool execution
-* Prompt abuse
-* Privilege escalation
-* Data leakage
-* Supply-chain risks
-
-Through hands-on exercises, I explored secure development practices by scaffolding a Shopping Assistant agent and progressively adding multiple layers of security controls.
+AI coding agents can generate working code quickly, but speed without guardrails creates real risk: unreviewed tool calls, unsafe file access, and unvetted dependencies. This session took a scaffolded **Shopping Assistant** ReAct agent and hardened it end-to-end — combining project-level security context, automated static analysis, and runtime validation hooks.
 
 ---
 
 # 🎯 Day 4 Objectives
 
-✅ Scaffold an ADK-based Shopping Assistant
-
-✅ Explore generated agent architecture
-
-✅ Configure project-level AI guardrails
-
-✅ Implement secure coding standards
-
-✅ Configure pre-commit security gates
-
-✅ Run Semgrep security scans
-
-✅ Create runtime agent hooks
-
-✅ Validate tool execution requests
-
-✅ Implement STRIDE threat-modeling workflows
-
-✅ Understand defense-in-depth for AI systems
+✅ Understand secure agentic coding principles
+✅ Scaffold an agent using `agents-cli`
+✅ Define project security rules with a `CONTEXT.md` file
+✅ Apply STRIDE threat modeling to an agent's tool surface
+✅ Set up pre-commit Semgrep scanning
+✅ Build runtime tool-call validation hooks
+✅ Document the secure development workflow
 
 ---
 
-# 🛍️ Project Built — Shopping Assistant
+# 🧠 Project Hardened — Shopping Assistant Agent
 
-A generated Google ADK project used as a sandbox environment for security experimentation.
+A ReAct-style agent (scaffolded with `agents-cli`) supporting product search, order tracking, and discount redemption — used as the security sandbox for this session.
 
-### Features
+📁 The hardened agent itself lives at [`shopping-assistant`](../../shopping-assistant) in the repo root.
 
-🛒 Product Search
+### Security Layers Added
 
-📦 Order Tracking
+🛡️ **Project Context Rules** — a `CONTEXT.md` defining safe-coding constraints for any AI agent contributing to the codebase
 
-🎟️ Discount Redemption
+🔍 **Pre-commit Semgrep Scanning** — static analysis run automatically before every commit to catch common vulnerability patterns
 
-🔒 Security Validation
+🪝 **Tool-Call Validation Hooks** — runtime checks that intercept and validate agent tool calls before execution
 
-🛡️ Threat Modeling
+🧩 **STRIDE Threat-Modeling Skill** — a reusable skill applied to systematically identify Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege risks in the agent's design
 
 ---
 
-# 🧠 Secure Agent Development Workflow
+## ⚙️ Security Workflow
 
 ```text
-Developer
-    ↓
-Antigravity IDE
-    ↓
-Project Context Rules
-    ↓
-Pre-Commit Security Gates
-    ↓
-Semgrep Scan
-    ↓
-Agent Hooks
-    ↓
-Tool Validation
-    ↓
-Threat Modeling
-    ↓
-Secure Agent Deployment
+Agent Scaffolded (agents-cli)
+        ↓
+CONTEXT.md (project security rules)
+        ↓
+STRIDE Threat Model Applied
+        ↓
+Pre-commit Hook Installed (Semgrep)
+        ↓
+Tool-Call Validation Hook
+        ↓
+Hardened, Commit-Ready Agent
 ```
 
 ---
 
-# 🛡️ Security Layers Implemented
+# 🛠️ Concepts Explored
 
-## 1️⃣ Project Context Rules
+### 🔹 Secure Agentic Coding
 
-Created:
+Treating AI-generated code with the same scrutiny as human-written code — review, scan, and validate before trusting it.
 
-```text
-.agents/CONTEXT.md
-```
+### 🔹 STRIDE Threat Modeling
 
-This file establishes secure coding standards that AI agents must follow throughout the project.
+A structured framework for reasoning about what could go wrong in an agent's tool access, data flow, and permissions.
 
-### Rules Defined
+### 🔹 Static Analysis with Semgrep
 
-* Tool input validation via Pydantic
-* No unrestricted shell execution
-* Mandatory remediation workflow for failed security checks
+Automated pattern-based scanning integrated into the commit workflow to catch issues before they reach the repo.
 
----
+### 🔹 Runtime Validation Hooks
 
-## 2️⃣ Pre-Commit Security Gates
+Intercepting and validating tool calls at execution time, not just at code-review time — catching issues that only appear at runtime.
 
-Created:
+### 🔹 Project-Level Security Context
 
-```text
-.pre-commit-config.yaml
-```
-
-Configured automated checks for:
-
-* End-of-file consistency
-* Trailing whitespace cleanup
-* Semgrep security scanning
-
-These checks execute automatically before every commit.
-
----
-
-## 3️⃣ Runtime Agent Hooks
-
-Created:
-
-```text
-.agents/hooks.json
-```
-
-Introduced a PreToolUse interception layer that validates tool calls before execution.
-
-This prevents unsafe commands from running without inspection.
-
----
-
-## 4️⃣ Tool Validation Script
-
-Created:
-
-```text
-.agents/scripts/validate_tool_call.py
-```
-
-The validator inspects tool requests and blocks potentially dangerous operations.
-
-Examples:
-
-❌ rm -rf /
-
-❌ curl | bash
-
-❌ Destructive shell actions
-
----
-
-## 5️⃣ STRIDE Threat Modeling Skill
-
-Created:
-
-```text
-.agents/skills/stride-threat-model/
-```
-
-The custom skill guides security reviews using Microsoft's STRIDE methodology.
-
-### STRIDE Categories
-
-| Category               | Purpose                          |
-| ---------------------- | -------------------------------- |
-| Spoofing               | Verify identity boundaries       |
-| Tampering              | Detect unauthorized modification |
-| Repudiation            | Ensure accountability            |
-| Information Disclosure | Prevent data leakage             |
-| Denial of Service      | Protect availability             |
-| Elevation of Privilege | Prevent access abuse             |
+Using a `CONTEXT.md` file to give any AI coding agent working in the repo a consistent set of security constraints to follow.
 
 ---
 
 # 📂 Project Structure
 
 ```text
-day-4-secure-agentic-coding/
+Day-4/secure-agentic-coding/
 │
 ├── README.md
-├── screenshots/
-│
-├── main.py
+├── .python-version
 ├── pyproject.toml
-└── uv.lock
+├── uv.lock
+├── main.py
+└── screenshots/
 ```
 
 ---
 
 # 📸 Screenshots
 
-## 1️⃣ Agents CLI Setup Complete
+## 1️⃣ agents-cli Setup Complete
 
-![Agents CLI Setup](screenshots/01-agents-cli-setup-complete.png)
+![agents-cli setup](screenshots/01-agents-cli-setup-complete.png)
 
 ---
 
 ## 2️⃣ Shopping Assistant Scaffolded
 
-![Shopping Assistant Scaffolded](screenshots/02-shopping-assistant-scaffolded.png)
+![Shopping assistant scaffolded](screenshots/02-shopping-assistant-scaffolded.png)
 
 ---
 
-## 3️⃣ Lint Validation Success
+## 3️⃣ Lint Success
 
-![Lint Success](screenshots/03-lint-success.png)
-
----
-
-## 4️⃣ Agent Architecture Walkthrough
-
-![Agent Walkthrough](screenshots/04-agent-walkthrough.png)
+![Lint success](screenshots/03-lint-success.png)
 
 ---
 
-## 5️⃣ CONTEXT.md Security Rules
+## 4️⃣ Agent Walkthrough
 
-![CONTEXT.md](screenshots/05-context-md-created.png)
-
----
-
-## 6️⃣ Pre-Commit Hooks Installed
-
-![Pre-Commit Hooks](screenshots/06-precommit-hooks-installed.png)
+![Agent walkthrough](screenshots/04-agent-walkthrough.png)
 
 ---
 
-## 7️⃣ Agent Hook Configuration
+## 5️⃣ CONTEXT.md Created
 
-![Agent Hooks](screenshots/07-agent-hooks-json.png)
-
----
-
-## 8️⃣ Tool Validation Script
-
-![Tool Validation](screenshots/08-validate-tool-call-script.png)
+![Context md created](screenshots/05-context-md-created.png)
 
 ---
 
-# 🧪 Security Concepts Explored
+## 6️⃣ Pre-commit Hooks Installed
 
-### 🔹 Defense in Depth
+![Pre-commit hooks installed](screenshots/06-precommit-hooks-installed.png)
 
-Multiple layers of protection reduce single points of failure.
+---
 
-### 🔹 Shift-Left Security
+## 7️⃣ Agent Hooks JSON
 
-Security checks are performed during development rather than after deployment.
+![Agent hooks json](screenshots/07-agent-hooks-json.png)
 
-### 🔹 Static Analysis
+---
 
-Semgrep scans source code for vulnerabilities before code reaches production.
+## 8️⃣ Validate Tool-Call Script
 
-### 🔹 Runtime Governance
-
-Agent hooks monitor behavior during execution.
-
-### 🔹 Threat Modeling
-
-STRIDE provides a systematic framework for identifying risks.
+![Validate tool call script](screenshots/08-validate-tool-call-script.png)
 
 ---
 
 # 🧩 Challenges Solved
 
-| Challenge                         | Solution                                            |
-| --------------------------------- | --------------------------------------------------- |
-| Understanding generated ADK code  | Performed agent walkthrough and architecture review |
-| Hardcoded secret detection        | Added Semgrep security scanning                     |
-| Unsafe command execution          | Implemented validation hooks                        |
-| Tool abuse prevention             | Added pre-execution checks                          |
-| Security workflow standardization | Created reusable CONTEXT rules                      |
-| Threat assessment process         | Built STRIDE modeling skill                         |
+| Problem                                   | Resolution                                          |
+| ------------------------------------------ | ---------------------------------------------------- |
+| No security baseline for agent-generated code | Authored a `CONTEXT.md` with explicit security rules |
+| Vulnerable patterns slipping into commits | Installed Semgrep as a pre-commit hook               |
+| Unvalidated tool calls at runtime          | Built a tool-call validation hook script             |
+| Unstructured risk assessment               | Applied STRIDE threat modeling systematically        |
 
 ---
 
 # 🔥 Key Takeaways
 
-* Security must be built into AI systems from day one
-* Automated security gates reduce human error
-* Threat modeling improves system design
-* Runtime validation protects against unsafe tool usage
-* Defense-in-depth is essential for agentic applications
-* Secure defaults create safer AI workflows
+* AI-generated code needs the same security discipline as hand-written code
+* STRIDE gives a repeatable structure for reasoning about agent risk
+* Pre-commit scanning catches issues before they ever reach version control
+* Runtime validation hooks close gaps that static analysis alone can't catch
+* Security context files let any agent (human or AI) work within the same guardrails
 
 ---
 
 # 🧰 Technologies Used
 
-| Category          | Technology                 |
-| ----------------- | -------------------------- |
-| Language          | Python                     |
-| Framework         | Google ADK                 |
-| Security Scanning | Semgrep                    |
-| Tooling           | Antigravity IDE            |
-| Workflow          | Pre-Commit                 |
-| Methodology       | STRIDE                     |
-| Environment       | Python Virtual Environment |
-| IDE               | VS Code                    |
+| Category         | Technology                  |
+| ----------------- | ---------------------------- |
+| Language          | Python                      |
+| Agent Scaffolding | `agents-cli`                 |
+| Static Analysis   | Semgrep                     |
+| Threat Modeling   | STRIDE                      |
+| Workflow          | pre-commit hooks            |
+| Package Manager   | `uv`                         |
+| IDE                | VS Code                     |
 
 ---
 
 # 🚀 Outcome
 
-Successfully implemented a secure AI development workflow that combines:
-
-* Automated security scanning
-* Runtime execution controls
-* Project-level governance
-* Threat modeling practices
-* Secure coding standards
-
-This project demonstrated how modern AI systems can be built with security integrated throughout the development lifecycle rather than added as an afterthought.
+Successfully scaffolded a ReAct shopping assistant agent and hardened it with a layered security workflow — project-level rules, threat modeling, static analysis, and runtime validation — turning a quick AI-generated prototype into a commit-ready, security-reviewed agent.
 
 ---
 
 <div align="center">
 
-### 🔐 Day 4 Secure Agentic Coding Successfully Completed
+### 🌟 Day 4 Secure Agentic Coding Successfully Completed
 
-**"Building AI agents is powerful. Building secure AI agents is essential."**
+**"Fast AI-generated code is only as good as the guardrails built around it."**
 
 </div>
