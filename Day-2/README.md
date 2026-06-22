@@ -1,4 +1,5 @@
 <div align="center">
+
 # 🚀 Day 2 — Agent Tools & Interoperability
 
 <div align="center">
