@@ -2,8 +2,6 @@
 
 # 🚀 Day 3 — Agent Skills & Building Intelligent AI Workflows
 
-<div align="center">
-
 ### Google AI Agents Intensive Program
 
 *Building intelligent AI agents using reusable skills, structured instructions, and interactive learning workflows.*
@@ -199,7 +197,7 @@ Day-3/
 # 🧰 Technologies Used
 
 | Category    | Technology                 |
-| ----------- | -------------------------- |
+| ----------- | --------------------------- |
 | Language    | Python                     |
 | Framework   | Google ADK                 |
 | Model       | Gemini 2.5 Flash           |

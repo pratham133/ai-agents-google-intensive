@@ -2,8 +2,6 @@
 
 # 🚀 Day 2 — Agent Tools & Interoperability
 
-<div align="center">
-
 ### Google AI Agents Intensive Program
 
 *Exploring how AI Agents connect to tools, data sources, and external systems through open interoperability standards.*
@@ -197,85 +195,7 @@ Instead of creating custom integrations for every system, developers can expose 
 
 ---
 
-## 🤝 Agent Interoperability
-
-Interoperability enables different AI agents and systems to collaborate using shared standards and communication protocols.
-
----
-
-## 📚 Documentation-Aware AI
-
-Rather than relying solely on model training data, AI agents can access authoritative documentation in real time through MCP servers.
-
-This improves reliability, accuracy, and developer productivity.
-
----
-
-# 💭 Personal Reflection
-
-Day 2 helped me understand that AI agents become significantly more powerful when connected to external tools and trusted knowledge sources.
-
-The most valuable insight was learning that modern AI development is not just about prompts and models—it is increasingly about building ecosystems where agents can safely access information, execute actions, and collaborate with other systems through open standards.
-
-Working with the Google Developer Knowledge MCP Server demonstrated how documentation can become directly accessible to AI workflows, making development faster and more reliable.
-
----
-
-# 📋 Day 2 Completion Checklist
-
-* [x] Listened to the Day 2 summary podcast.
-* [x] Read the Agent Tools & Interoperability whitepaper.
-* [x] Completed the Antigravity CLI codelab.
-* [x] Completed the Google Developer Knowledge MCP codelab.
-* [x] Connected an MCP server.
-* [x] Queried developer documentation.
-* [x] Generated Python code using MCP-powered knowledge retrieval.
-* [x] Documented the entire learning process.
-
----
-
-# 🚀 Next Steps
-
-### Day 3 Goals
-
-* Explore advanced agent architectures.
-* Learn agent memory and reasoning workflows.
-* Build more sophisticated AI-powered applications.
-* Continue documenting the learning journey publicly.
-
----
-
-<div align="center">
-
-### 🌟 Day 2 Successfully Completed
-
-**"AI becomes truly useful when it can interact with the world beyond its training data."**
-
-</div>
-
-## 📸 Screenshots
-
-The following screenshots document the complete Day 2 journey, from setting up Antigravity CLI to generating a working Google Drive upload solution using MCP-powered documentation retrieval.
-
----
-
-### 🤖 Antigravity CLI Setup
-
-Successfully installed and configured Antigravity CLI, verifying that the local environment was ready for AI-assisted development workflows.
-
-![Antigravity CLI Setup](screenshot/01-antigravity-cli-setup.png)
-
----
-
-### 💬 First Successful CLI Query
-
-Executed a natural language prompt to confirm that the CLI was functioning correctly and able to communicate with the configured AI model.
-
-![First Query](screenshot/02-antigravity-cli-first-query.png)
-
----
-
-### ⚙️ AI Model Exploration
+## 🤝 AI Model Exploration
 
 Explored the available AI models and learned how to switch between different model configurations.
 

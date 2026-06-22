@@ -2,8 +2,6 @@
 
 # 🚀 Day 1 — Introduction to AI Agents & Vibe Coding
 
-<div align="center">
-
 ### Google AI Agents Intensive Program
 
 Building and deploying my first AI-generated web application using Google AI Studio.

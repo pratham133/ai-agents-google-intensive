@@ -2,8 +2,6 @@
 
 # 🚀 AI Agents — Google Intensive Program
 
-<div align="center">
-
 *Documenting my journey through Google's AI Agents Intensive Program — notes, codelabs, projects, and deployments.*
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
@@ -17,7 +15,7 @@
 
 ## 📖 About
 
-This repo tracks my hands-on progress through Google's AI Agents Intensive Program — going from a basic AI-generated web app to building, securing, and deploying real agents with Google's Agent Development Kit (ADK) and Gemini.
+This repo tracks my hands-on progress through Google's AI Agents Intensive Program — going from a basic AI-generated web app to building, securing, anddeploying real agents with Google's Agent Development Kit (ADK) and Gemini.
 
 Each `Day-N` folder is a self-contained project with its own README, screenshots, and code — so you can jump into any single day without needing the rest.
 

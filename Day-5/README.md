@@ -2,8 +2,6 @@
 
 # 🚀 Day 5 — Setting Up an Expense Agent with Google ADK
 
-<div align="center">
-
 ### Google AI Agents Intensive Program
 
 *Building AI-powered applications using Google Agent Development Kit (ADK) and Gemini.*
@@ -256,7 +254,7 @@ After enabling the required API, the project encountered a billing requirement r
 # 🧰 Technologies Used
 
 | Category        | Technology                      |
-| --------------- | ------------------------------- |
+| --------------- | -------------------------------- |
 | Language        | Python 3.13                     |
 | Framework       | Google ADK 2.2.0                |
 | Model           | Gemini Flash                    |
