@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🚀 Day 1 — Introduction to AI Agents & Vibe Coding
 
 <div align="center">
