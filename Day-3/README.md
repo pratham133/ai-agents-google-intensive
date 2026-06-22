@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🚀 Day 3 — Agent Skills & Building Intelligent AI Workflows
 
 <div align="center">
