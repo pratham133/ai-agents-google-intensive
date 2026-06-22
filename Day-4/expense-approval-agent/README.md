@@ -1,4 +1,3 @@
-<div align="center">
         
 # 🚀 Day 4 — Building an Expense Approval Agent
 
