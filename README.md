@@ -4,7 +4,7 @@
 
 *Documenting my journey through Google's AI Agents Intensive Program — notes, codelabs, projects, and deployments.*
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Days Completed](https://img.shields.io/badge/Days%20Completed-5%2F5-blue)
 ![Built With](https://img.shields.io/badge/Built%20With-Google%20ADK-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
