@@ -1,344 +1,153 @@
-# 🚀 Google AI Agents Intensive Program
+# 🚀 AI Agents — Google Intensive Program
 
 <div align="center">
 
-## 🎓 Successfully Completed Google's AI Agents Intensive Program
+*Documenting my journey through Google's AI Agents Intensive Program — notes, codelabs, projects, and deployments.*
 
-Building AI Agents • Google ADK • MCP • Secure AI Development • Google Cloud • Vertex AI
-
-![Program](https://img.shields.io/badge/Google-AI%20Agents%20Intensive-blue)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![Duration](https://img.shields.io/badge/Duration-5%20Days-brightgreen)
+![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-5%2F5-blue)
 ![Built With](https://img.shields.io/badge/Built%20With-Google%20ADK-red)
-![Language](https://img.shields.io/badge/Python-3.13-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 </div>
 
 ---
 
-# 📖 About
+## 📖 About
 
-This repository documents my successful completion of **Google's AI Agents Intensive Program**.
+This repo tracks my hands-on progress through Google's AI Agents Intensive Program — going from a basic AI-generated web app to building, securing, and deploying real agents with Google's Agent Development Kit (ADK) and Gemini.
 
-Over five intensive days, I explored modern AI agent development by building practical projects, experimenting with Google's AI ecosystem, and documenting my complete learning journey.
-
-The program covered the foundations of AI agents, agentic engineering, secure AI development, Model Context Protocol (MCP), Google Agent Development Kit (ADK), Google Cloud, and real-world agent development workflows.
-
-Every project, screenshot, note, and debugging session has been preserved in this repository as both a learning journal and a portfolio of my work.
+Each `Day-N` folder is a self-contained project with its own README, screenshots, and code — so you can jump into any single day without needing the rest.
 
 ---
 
-# 🎯 Learning Objectives
+## 🗂️ Program Progress
 
-Throughout this program, I gained hands-on experience with:
-
-- 🤖 AI Agent Development
-- 🧠 Agentic Engineering
-- 🔗 Model Context Protocol (MCP)
-- 🛠 Google Agent Development Kit (ADK)
-- ☁️ Google Cloud & Vertex AI
-- 🔐 Secure Agent Development
-- 💻 AI-assisted Software Engineering
-- 🚀 Production-ready AI Workflows
-
----
-
-# 📅 Program Progress
-
-| Day | Topic | Status |
-|------|-------|--------|
-| Day 1 | Introduction to AI Agents & Vibe Coding | ✅ Completed |
-| Day 2 | Agent Tools & Interoperability (MCP) | ✅ Completed |
-| Day 3 | Building AI Agents with Google ADK | ✅ Completed |
-| Day 4 | Secure Agent Development & Agentic Coding | ✅ Completed |
-| Day 5 | Building & Debugging an Expense Agent with Google ADK | ✅ Completed |
+| Day | Topic                                  | What I Built                                      | Status |
+|-----|-----------------------------------------|---------------------------------------------------|--------|
+| 1   | Intro to AI Agents & Vibe Coding        | AI-generated Todo web app (Google AI Studio)       | ✅ |
+| 2   | Agent Tools & Interoperability          | MCP-powered Google Drive upload script             | ✅ |
+| 3   | Agent Skills & ADK                      | Study Buddy Agent (Google ADK + custom skill)       | ✅ |
+| 4   | Decision-Making Agents                  | Expense Approval Agent (APPROVE/REVIEW/REJECT)      | ✅ |
+| 4   | Secure Agentic Coding                   | Security layer (hooks, STRIDE model, pre-commit)    | ✅ |
+| 5   | Production Agent Setup & Deployment     | Expense Agent w/ ADC auth + Terraform deployment    | ✅ |
+| —   | Capstone-adjacent                       | Shopping Assistant agent (hardened in Day 4)        | ✅ |
 
 ---
 
-# 🏆 Projects Completed
-
-## 📌 Day 1 — AI Todo Application
-
-Built a frontend Todo Application using AI-assisted development with Google AI Studio.
-
-### Highlights
-
-- AI-generated web application
-- Prompt engineering
-- Frontend development workflow
-- Google AI Studio deployment
-
----
-
-## 📌 Day 2 — MCP & Agent Interoperability
-
-Explored how AI agents communicate with external tools and services.
-
-### Highlights
-
-- Model Context Protocol (MCP)
-- Agent-to-Agent communication
-- Agent-to-UI communication
-- Google Developer Knowledge MCP Server
-- Google Drive API integration
-
----
-
-## 📌 Day 3 — Study Buddy Agent
-
-Developed a conversational learning assistant using Google ADK and Gemini.
-
-### Features
-
-- Socratic teaching approach
-- Interactive learning
-- Guided concept exploration
-- Gemini-powered conversations
-
-### Technologies
-
-- Google ADK
-- Gemini 2.5 Flash
-- Python
-- ngrok
-
----
-
-## 📌 Day 4 — Expense Approval Agent
-
-Created an AI agent capable of reviewing and classifying employee expense requests.
-
-### Decision Types
-
-- ✅ APPROVE
-- ⚠️ REVIEW
-- ❌ REJECT
-
-### Skills Learned
-
-- Agent design patterns
-- Instruction engineering
-- Decision workflows
-- ADK agent configuration
-
----
-
-## 📌 Day 4 — Secure Agentic Coding
-
-Learned secure software engineering practices for AI agents.
-
-### Topics Covered
-
-- Agents CLI
-- Antigravity IDE
-- Secure Coding Standards
-- Semgrep
-- Pre-Commit Hooks
-- STRIDE Threat Modeling
-- Tool Validation
-
-### Project Built
-
-**Shopping Assistant Agent**
-
-Features:
-
-- Product search
-- Order lookup
-- Discount redemption
-- Secure development workflow
-
----
-
-## 📌 Day 5 — Google ADK Expense Agent
-
-Configured and debugged the official Google ADK Expense Agent while learning Google's cloud-based AI development workflow.
-
-### Highlights
-
-- Generated the official Google ADK Expense Agent
-- Configured Python environments using UV
-- Rebuilt a corrupted virtual environment
-- Configured Google Cloud SDK
-- Configured Application Default Credentials (ADC)
-- Enabled Vertex AI & Agent Platform APIs
-- Diagnosed authentication and deployment issues
-- Learned the complete Google ADK workflow
-
-### Skills Learned
-
-- Google ADK project structure
-- UV package management
-- Google Cloud authentication
-- Vertex AI configuration
-- API enablement
-- AI agent debugging
-- Cloud-based AI development
-
-### Final Status
-
-- ✅ Project configured successfully
-- ✅ ADK environment working
-- ✅ Google Cloud authentication completed
-- ✅ Required APIs enabled
-- ✅ Local ADK server running
-- ⚠️ Deployment requires Google Cloud Billing (official project requirement)
-
----
-
-# 📂 Repository Structure
+## 🗺️ Repository Structure
 
 ```text
 ai-agents-google-intensive/
 │
 ├── Day-1/
-│   └── my-first-project/
+│   └── my-first-project/        # AI-generated Todo app (HTML/CSS/JS)
 │
-├── Day-2/
+├── Day-2/                       # MCP + Antigravity CLI exercises
 │   ├── generated-code/
 │   ├── notes/
 │   └── screenshots/
 │
-├── Day-3/
-│   ├── screenshots/
+├── Day-3/                       # Study Buddy Agent (Google ADK + skills)
 │   ├── skill/
 │   └── study_buddy_agent/
 │
-├── Day-4-expense-approval-agent/
-│   ├── expense_agent/
-│   ├── screenshots/
-│   └── README.md
-│
-├── day-4-secure-agentic-coding/
-│   ├── screenshots/
-│   ├── shopping-assistant/
-│   └── README.md
+├── Day-4/
+│   ├── expense-approval-agent/  # Decision-making agent (APPROVE/REVIEW/REJECT)
+│   └── secure-agentic-coding/   # Security workflow built around shopping-assistant
 │
 ├── Day-5/
-│   ├── expense-agent/
-│   ├── screenshots/
-│   └── README.md
+│   └── expense-agent/           # Production-style ADK agent + Terraform deployment
 │
+├── shopping-assistant/          # ReAct agent scaffolded during Day 4, since hardened
+│
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-# 🛠 Technologies Explored
+## 📅 Day-by-Day Summaries
 
-## AI & Agent Frameworks
+### Day 1 — Introduction to AI Agents & Vibe Coding
+Built a complete Todo web app (HTML/CSS/JS) from a natural-language prompt using **Google AI Studio**, covering AI-assisted scaffolding, iterative prompting, and local testing.
+📁 [`Day-1/my-first-project`](Day-1/my-first-project)
 
-- Google Agent Development Kit (ADK)
-- Google Agents CLI
-- Gemini Models
-- Antigravity IDE
+### Day 2 — Agent Tools & Interoperability
+Explored the **Model Context Protocol (MCP)** — how agents discover and call external tools/APIs instead of relying on model memory alone. Used Antigravity CLI with the Google Developer Knowledge MCP Server to query live documentation and generate a working Google Drive upload script via OAuth 2.0.
+📁 [`Day-2`](Day-2)
 
-### Cloud Technologies
+### Day 3 — Agent Skills & Google ADK
+Built a **Study Buddy Agent** using Google's Agent Development Kit, introducing reusable "skills" as a way to make agents modular. Covered local agent execution (`adk run` / `adk web`) and debugging common environment issues (missing API keys, venv activation, deprecated models).
+📁 [`Day-3`](Day-3)
 
-- Google Cloud SDK
-- Vertex AI
-- Agent Platform API
-- Application Default Credentials (ADC)
+### Day 4 — Decision-Making Agents: Expense Approval
+Built an **Expense Approval Agent** that classifies requests as `APPROVE`, `REVIEW`, or `REJECT` using Gemini 2.5 Flash and rule-based business logic — with human-in-the-loop escalation for uncertain or high-value cases.
+📁 [`Day-4/expense-approval-agent`](Day-4/expense-approval-agent)
 
-### AI Concepts
+### Day 4 — Secure Agentic Coding
+Took a scaffolded **Shopping Assistant** agent and hardened it end-to-end: project-level security rules (`CONTEXT.md`), pre-commit Semgrep scanning, runtime tool-call validation hooks, and a custom **STRIDE threat-modeling skill**. This is the security workflow that produced the [`shopping-assistant`](shopping-assistant) project below.
+📁 [`Day-4/secure-agentic-coding`](Day-4/secure-agentic-coding)
 
-- AI Agents
-- Agent Skills
-- Agent Workflows
-- Agent Orchestration
-- Agent Interoperability
-- Model Context Protocol (MCP)
-- Tool Calling
+### Day 5 — Production Agent Setup & Deployment
+Set up a production-style **Expense Agent** with Google ADK, managed via `uv`, authenticated through Application Default Credentials (ADC), and scaffolded with a full Terraform deployment (Cloud Run, IAM, telemetry). Debugged real deployment blockers along the way — disabled APIs, billing requirements, broken venvs after a project move.
+📁 [`Day-5/expense-agent`](Day-5/expense-agent)
 
-### Security
-
-- Secure Agentic Coding
-- STRIDE Threat Modeling
-- Semgrep
-- Pre-Commit Hooks
-- Tool Validation
-- Security Guardrails
-
-### Development
-
-- Python
-- JavaScript
-- HTML
-- CSS
-- Git
-- GitHub
-- VS Code
-- UV Package Manager
-- ngrok
+### Shopping Assistant (built during Day 4)
+A ReAct agent generated with `agents-cli`, supporting product search, order tracking, and discount redemption. This is the project the Day 4 security workflow (hooks, Semgrep, STRIDE modeling) was built around — it now ships with the same Terraform/CI scaffolding as the Day 5 expense agent.
+📁 [`shopping-assistant`](shopping-assistant)
 
 ---
 
-# 📊 Program Summary
+## 🧰 Tech Stack
 
-| Achievement | Status |
-|-------------|--------|
-| 🎓 Program Completed | ✅ |
-| 📅 Duration | 5 Days |
-| 🤖 AI Projects Built | 5+ |
-| ☁️ Cloud Technologies | Google Cloud & Vertex AI |
-| 🛠 Frameworks Learned | Google ADK, MCP, Agents CLI |
-| 📸 Screenshots Captured | 30+ |
-| 📚 Documentation | Daily READMEs, Notes & Code |
-| 💻 Languages Used | Python, JavaScript, HTML, CSS |
-
----
-
-# 🎯 Key Takeaways
-
-Throughout this intensive program, I successfully:
-
-- ✅ Built multiple AI agents using Google ADK
-- ✅ Explored Model Context Protocol (MCP)
-- ✅ Learned secure AI development practices
-- ✅ Worked with Google Cloud & Vertex AI
-- ✅ Configured and debugged cloud-based AI applications
-- ✅ Improved Python development workflows using UV
-- ✅ Strengthened Git and GitHub project management
-- ✅ Documented complete implementation and debugging processes
+| Category          | Tools                                                |
+|-------------------|-------------------------------------------------------|
+| Language          | Python, JavaScript                                     |
+| Agent Framework   | Google ADK, `agents-cli`                                |
+| Models            | Gemini 2.5 Flash, Gemini Flash                          |
+| Protocols         | Model Context Protocol (MCP)                            |
+| Cloud             | Google Cloud (Vertex AI, Cloud Run, IAM, BigQuery)       |
+| Infra as Code     | Terraform                                               |
+| Security          | Semgrep, pre-commit, STRIDE threat modeling              |
+| Package Managers  | `uv`, npm                                               |
+| Tooling           | Antigravity CLI, VS Code                                |
 
 ---
 
-# 🏅 Program Completion
+## ▶️ Running a Project
 
-Successfully completed **Google's AI Agents Intensive Program**.
+Each day's project is self-contained with its own dependencies. General pattern for the ADK-based agents (Day 3 onward):
 
-This repository represents five days of hands-on learning, experimentation, debugging, and project development using Google's AI ecosystem.
+```bash
+cd Day-N/project-folder
+uv sync                  # or: pip install -r requirements.txt
+adk web                  # launches the local agent UI at http://127.0.0.1:8000
+```
 
-Beyond building AI agents, the program provided valuable experience with secure development, cloud authentication, debugging real-world issues, and documenting technical workflows.
+Day 1 is a static frontend — just open `index.html`, or serve it with any static server.
 
-This repository serves as both a learning journal and a portfolio showcasing the projects and skills developed throughout the program.
+Check each project's own `README.md` for exact setup steps, since requirements differ slightly day to day.
 
 ---
 
-# 🚀 What's Next
+## 🎯 Learning Goals
 
-Although the program has concluded, my AI learning journey continues.
+- Understand AI agent architectures end to end — from prompting to deployment
+- Build practical, runnable agents rather than just theory
+- Apply security practices to agentic systems, not just traditional code
+- Document the process publicly as a portfolio of real, working projects
 
-Next areas of exploration include:
+---
 
-- Multi-Agent Systems
-- Retrieval-Augmented Generation (RAG)
-- Advanced Google ADK Patterns
-- Agent Evaluation
-- AI Deployment
-- Production AI Systems
-- Open-source Agent Frameworks
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-## 🌟 Thank You for Visiting!
-
-This repository captures my complete journey through the **Google AI Agents Intensive Program**.
-
-If you found this repository helpful or interesting, consider giving it a ⭐.
-
-Happy Coding! 🚀
+**5 days down. Building toward production-ready agentic systems, one project at a time.**
 
 </div>
