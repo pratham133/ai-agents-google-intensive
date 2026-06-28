@@ -133,7 +133,7 @@ Check each project's own `README.md` for exact setup steps, since requirements d
 
 ## 🎯 Learning Goals
 
-- Understand AI agent architectures end to end — from prompting to deployment
+- Understand AI agent architectures end to end from prompting to deployment
 - Build practical, runnable agents rather than just theory
 - Apply security practices to agentic systems, not just traditional code
 - Document the process publicly as a portfolio of real, working projects
